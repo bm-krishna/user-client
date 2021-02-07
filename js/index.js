@@ -19,3 +19,16 @@ const onSubmitHandler = async () => {
   // show msg in html page by using docuemnt object.
   document.getElementById("result").innerHTML = `${resultResponse.message} &#129325 &#128540`;
 };
+async function getMessage()
+{
+  console.log("get massage")
+  const responsepromise=  await fetch("http://localhost:3000/user/info",{
+      method:"GET",
+      headers :{
+        "Content-Type":"application/json",
+      }
+    });
+    const response=await responsepromise.json();
+    // const {message="Message not found"} = response;
+    document.getElementById("display").innerHTML=response.message;
+}

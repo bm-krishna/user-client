@@ -1,0 +1,19 @@
+todo:
+    summarise below topics:
+        1. client-server architecture.
+        2. http 
+        3. node js
+            a. how to create node application by using npm
+            b. setup server by using expresss module.
+            c. optional go through http module of node. 
+        4. html with form and form submission and events of html input tags
+        5. Create client-sever applications to process request by using html, fetch api and node applicationo server.
+
+done
+1. Create on UI Button as a "Show Message" in `index.html`.
+2. Do `onClick` submit invoke function like getMessage().
+3. In getMessaeg function written logic to create HTTP request by using fetch api.
+4. request should be GET.
+5. path should be "/info"
+6. you know GET request won't have any body.
+7. reffer onSubmitHandler. 
